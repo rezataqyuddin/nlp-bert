@@ -19,7 +19,7 @@ class ReviewsController extends Controller
 
     public function countReview()
     {
-        return Reviews::count()->get();
+        return Reviews::count();
     }
 
     /**
