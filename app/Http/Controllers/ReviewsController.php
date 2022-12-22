@@ -40,7 +40,7 @@ class ReviewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return Reviews::create($request->all());
     }
 
     /**

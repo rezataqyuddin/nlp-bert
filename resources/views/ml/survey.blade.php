@@ -17,7 +17,7 @@
         </div>
         <div class="uk-section">
             <h3>Berikan Komentar</h3>
-            <form action="" method="post" class='uk-form-horizontal'>
+            <form action="{{route('review/store')}}" method="post" class='uk-form-horizontal'>
                 @csrf
                 <div class="uk-margin">
                     <select class="uk-select" name="aspect" id="aspect" required>
@@ -41,7 +41,7 @@
                     <textarea class="uk-textarea" name="comments" id="comments" rows="15" placeholder="Berikan Komentar" required></textarea>
                 </div>
                 <div class="uk-margin">
-                    <button type="submit" clas="uk-button uk-button-secondary">Submit Komentar</button>
+                    <button type="submit" class="uk-button uk-button-secondary">Submit Komentar</button>
                 </div>
             </form>
         </div>

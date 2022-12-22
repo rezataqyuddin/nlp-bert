@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $review = new ReviewsController;
-    $count = $review->countReview();
-    return view('welcome', compact('count'));
+    //    $count = $review->countReview();
+    return view('welcome');
 });
 Route::resource('review', ReviewsController::class);
