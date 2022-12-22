@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ReviewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $review = new ReviewsController;
+    $count = $review->countReview();
+    return view('welcome', compact('count'));
 });
+Route::resource('review', ReviewsController::class);
