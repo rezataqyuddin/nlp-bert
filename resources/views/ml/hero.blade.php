@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="uk-inline" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
-            <img uk-img src="images/learning.gif" class="uk-overlay uk-position-center uk-margin-large-top" loop=infinite alt="this image sourced from https://nearpod.com/">
+            <img uk-img src="{{url('images/learning.gif')}}" class="uk-overlay uk-position-center uk-margin-large-top" loop=infinite alt="this image sourced from https://nearpod.com/">
         </div>
     </div>
 </div>
