@@ -17,7 +17,7 @@
         </div>
         <div class="uk-section">
             <h3>Berikan Komentar</h3>
-            <form action="{{route('review/store')}}" method="post" class='uk-form-horizontal'>
+            <form action="{{route('review.store')}}" method="post" class='uk-form-horizontal'>
                 @csrf
                 <div class="uk-margin">
                     <select class="uk-select" name="aspect" id="aspect" required>
